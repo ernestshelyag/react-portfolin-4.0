@@ -1,0 +1,31 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; }
+  .App__header, .App__footer {
+    background: #49C5B6;
+    height: 40px;
+    line-height: 40px; }
+    .App__header a, .App__footer a {
+      color: #fff;
+      padding: 0 10px;
+      margin: 0;
+      z-index: 1; }
+      .App__header a:after, .App__footer a:after {
+        background: #fff;
+        height: 100%;
+        z-index: -1; }
+      .App__header a:hover, .App__footer a:hover {
+        color: #3F9687; }
+    .App__header .wrp, .App__footer .wrp {
+      display: flex;
+      justify-content: space-between; }
+    @media only screen and (max-width: 600px) {
+      .App__header, .App__footer {
+        height: 25px;
+        line-height: 25px;
+        font-size: 12px; } }
+  .App__nav {
+    margin-left: -10px; }
+  .App__main {
+    flex-grow: 1; }
