@@ -2,7 +2,9 @@
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ernestshelyag.github.io/react-portfolin-4.0",
   "dependencies": {
+    "gh-pages": "^1.1.0",
     "node-sass-chokidar": "^1.2.0",
     "npm-run-all": "^4.1.2",
     "react": "^16.3.0",
@@ -22,6 +24,7 @@
     "build-js": "react-scripts build",
     "build": "npm-run-all build-css build-js",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
   }
 }

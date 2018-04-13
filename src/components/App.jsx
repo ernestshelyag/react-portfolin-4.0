@@ -44,7 +44,7 @@ class App extends Component {
             <Route       path = '/admin'    component = { admin }    />
             <Route       path = '/error'    component = { error }    />
 
-            <Redirect from = '*' to = '/error' />
+            <Redirect from = '*' to = '/' />
           </Switch>
 
           <footer className = "App__footer">
