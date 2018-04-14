@@ -23,7 +23,7 @@ function Contacts(){
       <ul>
         <li><span>Телефон : </span><a href="tel:+79021390379">+7(902)139-03-79</a></li>
         <li><span>E-mail : </span><a href="ernest.shelyag@gmail.com">ernest.shelyag@gmail.com</a></li>
-        <li><span>Head hunter :</span><a href="#">aaaassss</a></li>
+        <li><span>Head hunter :</span><a href="https://murmansk.hh.ru/resume/1b481a69ff054bbdb60039ed1f52396b744748">https://hh.ru/resume</a></li>
         <li><span>Telegram : </span><a href="https://telegram.me/ernest_shelyag">ernest_shelyag</a></li>
       </ul>
     </ContactsBlock>
