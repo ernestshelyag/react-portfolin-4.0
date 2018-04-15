@@ -18,13 +18,25 @@ const PortfolioBlock = styled.section`
 const H2 = styled.h2`
   font-size: 25px;
   padding-bottom: 10px;
+  @media (max-width: 700px) {
+    padding-bottom: 0;
+  }
 `;
 const UL = styled.h2`
   list-style: square;
   margin: 0 0 40px 5px;
   color: #49C5B6;
+  @media (max-width: 700px) {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+    list-style: none;
+  }
   & a {
     color: #333;
+    @media (max-width: 700px) {
+      color: #49C5B6;
+      margin-bottom: 5px;
+    } 
     &:after {
       display: none;
     }
@@ -42,8 +54,10 @@ function Portfolio () {
       <div className = "wrp">
         <h1> Портфолио </h1>
         <p>
-          Любой свой код через 2 месяца кажется ужасным. Но именно опыт и ошибки помогают развиваться. Здесь представленны почти все мои работы в хронологическом порядке. Как вы уже понимаете я не считаю их идеальными. Но для меня самое главное - видеть прогресс.
+          Любой свой код спустя 2 месяца кажется ужасным. Но именно опыт и ошибки помогают развиваться. Здесь представлены почти все мои работы в хронологическом порядке. Как вы уже понимаете, я не считаю их идеальными. Но для меня самое главное - видеть прогресс.
         </p>
+
+
         <PortfolioBlock>
           <PortfolioItem content = { content[0] } />
           <PortfolioItem content = { content[1] } />
@@ -53,6 +67,8 @@ function Portfolio () {
           <PortfolioItem content = { content[5] } />
           <PortfolioItem content = { content[6] } />
         </PortfolioBlock>
+
+
         <H2>Другие работы:</H2>
         <UL>
           <li><a href="https://ernestshelyag.github.io/logo/logo.html">3D Логотип компании Индинс для главной страницы сайта.</a></li>
@@ -60,9 +76,9 @@ function Portfolio () {
           <li><a href="https://ernestshelyag.github.io/app/index.html">Черновик моего прошлого сайта-портфолио. (мне не понравился, решил все переделать)</a></li>
         </UL>
         <p>
-          Все эти работы - фронтенд. Бекенд начал изучать относительно недавно. К сожалению пока нет ни одного готового сайта на React, кроме сайта, на котором Вы сейчас находитесь.
+          Все эти работы - frontend. Backend начал изучать относительно недавно. К сожалению пока нет ни одного готового сайта на React, кроме сайта, на котором Вы сейчас находитесь.
           <br/>
-          Если у вас возникли какие-то вопросы или предложения, Вы можете связаться со мной в разделе <Link to = '/contacts'> Контакты </Link> любым удобным для Вас способом.
+          Если у Вас имеются какие-то вопросы или предложения, Вы можете связаться со мной в разделе <Link to = '/contacts'> Контакты </Link> любым удобным для Вас способом.
           <br/>
           Чтобы узнать больше информации обо мне - перейдите на следующую страницу<Link to = '/about'> по этой ссылке </Link>.
         </p>

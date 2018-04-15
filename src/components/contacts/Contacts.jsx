@@ -7,6 +7,9 @@ const ContactsBlock = styled.div`
   & span {
     display: inline-block;
     width: 160px;
+    @media (max-width: 700px) {
+     display: block;
+  }
   }
   & li {
     font-size: 25px;

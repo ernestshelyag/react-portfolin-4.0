@@ -6,6 +6,9 @@ import styled from 'styled-components'
 const Container = styled.div`
   height: 50vh;
   width: 50%;
+  @media (max-width: 700px) {
+    width: 100%;
+  }
 `;
 const Wrp = styled.div`
   border: solid 1px #49C5B6;
@@ -56,6 +59,7 @@ const TextBlock = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+  overflow: hidden;
   & a:after {
     display: none;
   }
@@ -90,6 +94,11 @@ const Help = styled.span`
   margin-top: 5px;
   font-size: 12px;
 `;
+const P = styled.p`
+  @media (max-width: 700px) {
+    display: none;
+  }
+`;
 
 // - - - - - styles end
 
@@ -105,7 +114,7 @@ function PortfolioItem (props) {
         <TextBlock className = "PortfolioItem__TextBlock PortfolioItem__Absolute" >
           <H2> { content.num } </H2>
           <H3> { content.title } </H3>
-          <p> { content.text } </p>
+          <P> { content.text } </P>
           <SiteLink href = { content.link } > { content.link } </SiteLink>
           <GithubLink href = { content.github } > Github исходники </GithubLink>
           <Help>
